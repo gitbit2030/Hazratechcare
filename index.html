@@ -1,15 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Gradient Background</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hazratech Care provides doorstep computer repair, laptop service, Wi-Fi setup, printer support, and home tech assistance.">
+  <title>Hazratech Care | Doorstep Computer Service</title>
+  <link rel="preload" as="image" href="assets/hazratech-care-home-computer-service.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body id="gradient">
-	<h1>Background Generator</h1>
-	<input class="color1" type="color" name="color1" value="#00ff00">
-	<input class="color2" type="color" name="color2" value="#ff0000">
-	<h2>Current CSS Background</h2>
-	<h3></h3>
-	<script type="text/javascript" src="script.js"></script>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="Hazratech Care home">
+      <span class="brand-mark" aria-hidden="true">H</span>
+      <span>Hazratech Care</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Primary navigation" data-nav>
+      <a href="#services">Services</a>
+      <a href="#platform">How It Works</a>
+      <a href="#outcomes">Why Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Doorstep computer service</p>
+        <h1 id="hero-title">Hazratech Care</h1>
+        <p class="hero-copy">Computer repair, laptop service, Wi-Fi setup, printer help, and software support delivered at your home with clear pricing and careful work.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">Book Home Service</a>
+          <a class="button button-secondary" href="#services">View Services</a>
+        </div>
+      </div>
+      <div class="hero-status" aria-label="Computer service highlights">
+        <span>Laptop and desktop repair</span>
+        <span>Wi-Fi and printer setup</span>
+        <span>Data backup support</span>
+      </div>
+    </section>
+
+    <section class="trust-band" aria-label="Hazratech Care highlights">
+      <div class="trust-item">
+        <strong>Home</strong>
+        <span>visit support</span>
+      </div>
+      <div class="trust-item">
+        <strong>Quick</strong>
+        <span>diagnosis</span>
+      </div>
+      <div class="trust-item">
+        <strong>Clear</strong>
+        <span>pricing</span>
+      </div>
+      <div class="trust-item">
+        <strong>Safe</strong>
+        <span>data handling</span>
+      </div>
+    </section>
+
+    <section class="section-intro" id="services">
+      <p class="eyebrow">Computer services</p>
+      <h2>Tech problems fixed where you use your devices.</h2>
+      <p>Hazratech Care brings practical computer support to your doorstep, from slow laptops and software issues to internet, printer, and device setup.</p>
+    </section>
+
+    <section class="service-grid" aria-label="Hazratech Care services">
+      <article class="service-card">
+        <div class="service-icon wrench" aria-hidden="true"></div>
+        <h3>Laptop and Desktop Repair</h3>
+        <p>Diagnosis and support for slow systems, startup issues, overheating, upgrades, hardware checks, and everyday computer problems.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon shield" aria-hidden="true"></div>
+        <h3>Software and Security</h3>
+        <p>Windows setup, driver installation, antivirus cleanup, account setup, backups, and safe transfer of important files.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon wifi" aria-hidden="true"></div>
+        <h3>Wi-Fi, Printer, and Devices</h3>
+        <p>Home network setup, router support, printer connection, email configuration, and help connecting phones or accessories.</p>
+      </article>
+    </section>
+
+    <section class="platform-section" id="platform">
+      <div class="platform-copy">
+        <p class="eyebrow">How it works</p>
+        <h2>Simple booking, careful service, clean handoff.</h2>
+        <p>Tell us the issue, choose a convenient home visit, and get clear next steps before any repair or setup work begins.</p>
+        <ul class="check-list">
+          <li>Issue checked and explained in plain language</li>
+          <li>Repair options confirmed before work starts</li>
+          <li>Devices tested with you before the visit ends</li>
+        </ul>
+      </div>
+
+      <div class="dashboard-preview" aria-label="Home service ticket preview">
+        <div class="preview-header">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="preview-body">
+          <div class="service-summary">
+            <span class="avatar" aria-hidden="true"></span>
+            <div>
+              <strong>Home Service Booked</strong>
+              <small>Technician visit: 2:30 PM</small>
+            </div>
+          </div>
+          <div class="progress-block">
+            <span>Service progress</span>
+            <div class="progress-track"><span></span></div>
+          </div>
+          <div class="mini-grid">
+            <div><strong>3</strong><span>Checks</span></div>
+            <div><strong>1</strong><span>Repair</span></div>
+            <div><strong>5</strong><span>Tests</span></div>
+          </div>
+          <div class="timeline-row">
+            <span></span>
+            <p>Laptop performance issue diagnosed and repair options confirmed.</p>
+          </div>
+          <div class="timeline-row accent">
+            <span></span>
+            <p>Wi-Fi, printer, and backup checks completed before handoff.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="outcomes-section" id="outcomes">
+      <div class="section-intro compact">
+        <p class="eyebrow">Why choose us</p>
+        <h2>Home tech support without the confusion.</h2>
+      </div>
+      <div class="outcome-list">
+        <article>
+          <span>01</span>
+          <h3>We come to you</h3>
+          <p>No shop visit needed for common repairs, setup work, troubleshooting, or device checks.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Plain explanations</h3>
+          <p>You get a simple diagnosis, repair options, and guidance before spending on parts or upgrades.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Practical aftercare</h3>
+          <p>We test the setup, answer questions, and leave your device ready for everyday use.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div>
+        <p class="eyebrow">Book a visit</p>
+        <h2>Get computer help at home.</h2>
+      </div>
+      <form class="contact-form" aria-label="Home computer service request">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <label>
+          <span>Phone</span>
+          <input type="tel" name="phone" autocomplete="tel" required>
+        </label>
+        <label>
+          <span>Service need</span>
+          <select name="service-need">
+            <option>Laptop or desktop repair</option>
+            <option>Windows or software setup</option>
+            <option>Wi-Fi or printer setup</option>
+            <option>Data backup or transfer</option>
+          </select>
+        </label>
+        <button class="button button-primary" type="submit">Request Home Service</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Hazratech Care</span>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

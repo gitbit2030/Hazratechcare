@@ -1,19 +1,26 @@
-var css = document.querySelector("h3");
-var color1 = document.querySelector(".color1");
-var color2 = document.querySelector(".color2");
-var body = document.getElementById("gradient");
+const header = document.querySelector("[data-header]");
+const navToggle = document.querySelector("[data-nav-toggle]");
+const nav = document.querySelector("[data-nav]");
 
-function setGradient() {
-	body.style.background = 
-	"linear-gradient(to right, " 
-	+ color1.value 
-	+ ", " 
-	+ color2.value 
-	+ ")";
-
-	css.textContent = body.style.background + ";";
+function setHeaderState() {
+  header.classList.toggle("is-scrolled", window.scrollY > 12);
 }
 
-color1.addEventListener("input", setGradient);
+navToggle.addEventListener("click", () => {
+  const isOpen = header.classList.toggle("is-open");
+  document.body.classList.toggle("nav-open", isOpen);
+  navToggle.setAttribute("aria-expanded", String(isOpen));
+  navToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+});
 
-color2.addEventListener("input", setGradient);
+nav.addEventListener("click", (event) => {
+  if (event.target instanceof HTMLAnchorElement) {
+    header.classList.remove("is-open");
+    document.body.classList.remove("nav-open");
+    navToggle.setAttribute("aria-expanded", "false");
+    navToggle.setAttribute("aria-label", "Open navigation");
+  }
+});
+
+setHeaderState();
+window.addEventListener("scroll", setHeaderState, { passive: true });
