@@ -171,22 +171,22 @@
       <form class="contact-form" aria-label="Home computer service request">
         <label>
           <span>Name</span>
-          <input type="text" name="name" autocomplete="name" required>
+          <input type="text" id="name" name="name" autocomplete="name" required>
         </label>
         <label>
           <span>Phone</span>
-          <input type="tel" name="phone" autocomplete="tel" required>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" required>
         </label>
         <label>
           <span>Service need</span>
-          <select name="service-need">
+          <select id="service" name="service-need">
             <option>Laptop or desktop repair</option>
             <option>Windows or software setup</option>
             <option>Wi-Fi or printer setup</option>
             <option>Data backup or transfer</option>
           </select>
         </label>
-        <button class="button button-primary" type="submit">Request Home Service</button>
+        <button id="whatsappBtn" class="button button-primary" type="submit">Request Home Service</button>
       </form>
     </section>
   </main>

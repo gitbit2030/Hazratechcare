@@ -22,5 +22,24 @@ nav.addEventListener("click", (event) => {
   }
 });
 
-setHeaderState();
-window.addEventListener("scroll", setHeaderState, { passive: true });
+document.querySelector(".contact-form").addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const service = document.getElementById("service").value;
+
+    const message =
+`Hello HazraTech Care,
+I need computer service.
+
+Name: ${name}
+Phone: ${phone}
+Service: ${service}`;
+
+    const whatsappURL =
+`https://wa.me/919999888777?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappURL, "_blank");
+});
