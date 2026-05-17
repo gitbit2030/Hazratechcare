@@ -709,6 +709,23 @@ select {
   outline: 3px solid rgba(11, 140, 143, 0.16);
 }
 
+.contact-form textarea,
+.contact-form select {
+  min-height: 46px;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: var(--ink);
+  background: #fbfdfc;
+}
+
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: var(--teal);
+  outline: 3px solid rgba(11, 140, 143, 0.16);
+}
+
 .contact-form .button {
   width: 100%;
   margin-top: 4px;

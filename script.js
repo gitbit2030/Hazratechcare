@@ -29,6 +29,7 @@ document.querySelector(".contact-form").addEventListener("submit", function (eve
     const name = document.getElementById("name").value;
     const phone = document.getElementById("phone").value;
     const service = document.getElementById("service").value;
+    const address = document.getElementById("address").value;
 
     const message =
 `Hello HazraTech Care,
@@ -36,10 +37,11 @@ I need computer service.
 
 Name: ${name}
 Phone: ${phone}
+Address: ${address}
 Service: ${service}`;
 
     const whatsappURL =
-`https://wa.me/919999888777?text=${encodeURIComponent(message)}`;
+`https://wa.me/919242281562?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappURL, "_blank");
 });
