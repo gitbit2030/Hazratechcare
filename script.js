@@ -22,9 +22,10 @@ nav.addEventListener("click", (event) => {
   }
 });
 
-document.querySelector(".contact-form").addEventListener("submit", function (event) {
+setHeaderState();
+window.addEventListener("scroll", setHeaderState, { passive: true });
 
-    event.preventDefault();
+document.getElementById("whatsappBtn").addEventListener("click", function () {
 
     const name = document.getElementById("name").value;
     const phone = document.getElementById("phone").value;
@@ -39,7 +40,6 @@ Name: ${name}
 Phone: ${phone}
 Address: ${address}
 Service: ${service}`;
-
     const whatsappURL =
 `https://wa.me/919242281562?text=${encodeURIComponent(message)}`;
 

@@ -80,7 +80,7 @@ select {
   letter-spacing: 0;
 }
 
-.brand-mark {
+/*.brand-mark {
   display: grid;
   place-items: center;
   width: 40px;
@@ -89,7 +89,7 @@ select {
   color: var(--white);
   background: linear-gradient(135deg, var(--teal), var(--coral));
   box-shadow: 0 10px 25px rgba(11, 140, 143, 0.25);
-}
+}*/
 
 .site-nav {
   display: flex;
@@ -927,4 +927,24 @@ select {
   .site-footer {
     flex-direction: column;
   }
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+}
+
+.brand img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.brand span {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
