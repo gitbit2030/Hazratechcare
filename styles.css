@@ -71,6 +71,24 @@ select {
   box-shadow: 0 12px 30px rgba(16, 35, 43, 0.08);
   backdrop-filter: blur(16px);
 }
+.site-header.is-scrolled .brand span,
+.site-header.is-scrolled .site-nav a {
+    color: var(--ink);
+}
+.site-header.is-scrolled .site-nav a:hover {
+    color: #0ea5e9;
+}
+.site-header.is-scrolled .brand img {
+    filter: none;
+}
+/*.site-header.scrolled {
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(12px);
+}
+.site-header.scrolled .brand span,
+.site-header.scrolled nav a {
+    color: #0f172a;
+}*/
 
 .brand {
   display: inline-flex;
