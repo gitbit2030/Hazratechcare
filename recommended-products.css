@@ -1,0 +1,232 @@
+.category-hero {
+  padding: 140px clamp(22px, 5vw, 72px) 70px;
+  color: var(--white);
+  background:
+    linear-gradient(90deg, rgba(13, 31, 39, 0.94), rgba(13, 31, 39, 0.7)),
+    linear-gradient(135deg, var(--navy), #0b575b);
+}
+
+.category-hero h1 {
+  max-width: 880px;
+  margin: 0;
+  font-size: clamp(3rem, 7vw, 6.3rem);
+  line-height: 0.92;
+  letter-spacing: 0;
+}
+
+.category-hero p:last-child {
+  max-width: 650px;
+  margin: 24px 0 0;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: clamp(1rem, 1.6vw, 1.18rem);
+}
+
+.category-shell {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 32px 22px 92px;
+}
+
+.category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: -58px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: var(--shadow);
+  position: relative;
+  z-index: 2;
+}
+
+.category-tabs a {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  padding: 9px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--navy);
+  font-weight: 850;
+  background: var(--white);
+}
+
+.category-tabs a.is-active {
+  color: var(--white);
+  border-color: var(--teal);
+  background: var(--teal);
+}
+
+.category-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: end;
+  margin: 54px 0 22px;
+}
+
+.category-heading h2 {
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1;
+}
+
+.dark-button {
+  color: var(--navy);
+  border-color: var(--line);
+  background: var(--white);
+}
+
+.recommended-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.recommended-card {
+  display: grid;
+  gap: 16px;
+  min-height: 100%;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 18px 46px rgba(16, 35, 43, 0.08);
+}
+
+.recommended-badge {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 30px;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: var(--navy);
+  font-size: 0.78rem;
+  font-weight: 850;
+  background: #e7f5f0;
+}
+
+.recommended-card h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 1.35rem;
+}
+
+.recommended-card p {
+  margin: 0;
+  color: rgba(16, 35, 43, 0.72);
+}
+
+.recommended-meta {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recommended-meta li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(16, 35, 43, 0.09);
+  color: rgba(16, 35, 43, 0.7);
+}
+
+.recommended-meta strong {
+  color: var(--ink);
+  text-align: right;
+}
+
+.recommended-card .button {
+  width: 100%;
+  margin-top: auto;
+}
+
+.category-note {
+  display: grid;
+  gap: 8px;
+  margin-top: 28px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f7fbfa;
+}
+
+.category-note strong {
+  color: var(--navy);
+}
+
+.category-note p {
+  margin: 0;
+  color: rgba(16, 35, 43, 0.72);
+}
+
+@media (max-width: 900px) {
+  .recommended-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .category-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .category-hero {
+    padding: 110px 18px 62px;
+  }
+
+  .category-shell {
+    padding: 26px 18px 68px;
+  }
+
+  .category-tabs {
+    margin-top: -46px;
+  }
+
+  .category-tabs a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .recommended-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.floating-call {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 20px;
+    border-radius: 999px;
+
+    background: #0f172a;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+
+    box-shadow: 0 14px 40px rgba(15,23,42,0.35);
+
+    transition: all 0.3s ease;
+}
+
+.floating-call:hover {
+    transform: translateY(-4px);
+    background: #14b8a6;
+}

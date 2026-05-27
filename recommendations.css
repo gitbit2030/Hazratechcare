@@ -1,0 +1,293 @@
+.affiliate-hero-media {
+  background-image: url("assets/hazratech-care-affiliate-products.png");
+}
+
+.affiliate-hero h1 {
+  max-width: 11ch;
+  font-size: clamp(3.5rem, 8vw, 7.4rem);
+}
+
+.affiliate-disclosure {
+  display: grid;
+  gap: 8px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 28px clamp(22px, 4vw, 42px);
+  border-bottom: 1px solid var(--line);
+}
+
+.affiliate-disclosure strong {
+  color: var(--navy);
+  font-size: 1.05rem;
+}
+
+.affiliate-disclosure p {
+  max-width: 880px;
+  margin: 0;
+  color: rgba(16, 35, 43, 0.72);
+}
+
+.guide-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  max-width: var(--max-width);
+  margin: 46px auto 0;
+  padding: 0 22px;
+}
+
+.guide-strip article {
+  min-height: 190px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+
+.guide-strip span,
+.product-meta span {
+  color: var(--coral);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.guide-strip h2 {
+  margin: 26px 0 8px;
+  color: var(--navy);
+  font-size: 1.2rem;
+}
+
+.guide-strip p {
+  margin: 0;
+  color: rgba(16, 35, 43, 0.72);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 22px 92px;
+}
+
+.product-card {
+  display: grid;
+  gap: 18px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 18px 46px rgba(16, 35, 43, 0.08);
+}
+
+.product-visual {
+  position: relative;
+  min-height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #edf7f4, #ffffff);
+}
+
+.product-visual::before,
+.product-visual::after {
+  position: absolute;
+  content: "";
+}
+
+.product-visual.ssd::before {
+  inset: 34px 70px 34px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--navy), #284f65);
+}
+
+.product-visual.ssd::after {
+  left: 92px;
+  right: 92px;
+  bottom: 48px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--teal);
+}
+
+.product-visual.hub::before {
+  inset: 48px 58px;
+  border-radius: 8px;
+  background: var(--teal);
+}
+
+.product-visual.hub::after {
+  left: 74px;
+  right: 74px;
+  top: 67px;
+  height: 14px;
+  border-radius: 5px;
+  background: var(--white);
+  box-shadow: 34px 0 0 rgba(255, 255, 255, 0.85), 68px 0 0 rgba(255, 255, 255, 0.7);
+}
+
+.product-visual.router::before {
+  left: 56px;
+  right: 56px;
+  bottom: 42px;
+  height: 48px;
+  border-radius: 8px;
+  background: var(--navy);
+}
+
+.product-visual.router::after {
+  left: 77px;
+  top: 34px;
+  width: 8px;
+  height: 62px;
+  border-radius: 999px;
+  background: var(--coral);
+  box-shadow: 86px 0 0 var(--coral);
+}
+
+.product-visual.keyboard::before {
+  left: 36px;
+  right: 36px;
+  bottom: 38px;
+  height: 58px;
+  border-radius: 8px;
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.85) 0 13px, transparent 13px 19px),
+    var(--navy);
+}
+
+.product-visual.keyboard::after {
+  right: 46px;
+  top: 28px;
+  width: 42px;
+  height: 64px;
+  border-radius: 24px;
+  background: var(--teal);
+}
+
+.product-visual.stand::before {
+  left: 64px;
+  right: 64px;
+  top: 38px;
+  height: 54px;
+  border-radius: 8px;
+  border: 8px solid var(--navy);
+}
+
+.product-visual.stand::after {
+  left: 92px;
+  right: 92px;
+  bottom: 36px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--coral);
+  box-shadow: 24px -28px 0 -2px var(--teal);
+}
+
+.product-visual.headset::before {
+  left: 72px;
+  top: 30px;
+  width: 78px;
+  height: 78px;
+  border: 9px solid var(--navy);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+}
+
+.product-visual.headset::after {
+  left: 54px;
+  top: 82px;
+  width: 30px;
+  height: 46px;
+  border-radius: 8px;
+  background: var(--teal);
+  box-shadow: 104px 0 0 var(--teal), 70px 34px 0 -10px var(--coral);
+}
+
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.product-meta strong {
+  color: rgba(16, 35, 43, 0.62);
+  font-size: 0.86rem;
+}
+
+.product-card h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 1.38rem;
+}
+
+.product-card p {
+  margin: 0;
+  color: rgba(16, 35, 43, 0.72);
+}
+
+.product-card ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(16, 35, 43, 0.72);
+}
+
+.product-button {
+  margin-top: auto;
+}
+
+.affiliate-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  padding: 76px clamp(22px, 5vw, 72px);
+  color: var(--white);
+  background: linear-gradient(135deg, rgba(23, 56, 75, 0.98), rgba(11, 87, 91, 0.94));
+}
+
+.affiliate-cta h2 {
+  max-width: 760px;
+  margin: 0;
+  color: var(--white);
+  font-size: clamp(2rem, 4.5vw, 4rem);
+  line-height: 0.98;
+}
+
+.affiliate-cta .eyebrow {
+  color: var(--gold);
+}
+
+@media (max-width: 900px) {
+  .guide-strip,
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .affiliate-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .affiliate-hero h1 {
+    font-size: clamp(3rem, 16vw, 4.6rem);
+  }
+
+  .guide-strip,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .affiliate-disclosure,
+  .guide-strip,
+  .product-grid {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}

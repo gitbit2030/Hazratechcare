@@ -966,3 +966,9 @@ select {
     font-size: 1.5rem;
     font-weight: 700;
 }
+.header-ganesh img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    opacity: 0.9;
+}
