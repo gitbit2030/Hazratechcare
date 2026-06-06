@@ -25,7 +25,10 @@ nav.addEventListener("click", (event) => {
 setHeaderState();
 window.addEventListener("scroll", setHeaderState, { passive: true });
 
-document.getElementById("whatsappBtn").addEventListener("click", function () {
+const whatsappBtn = document.getElementById("whatsappBtn");
+
+if (whatsappBtn) {
+whatsappBtn.addEventListener("click", function () {
 
     const name = document.getElementById("name").value;
     const phone = document.getElementById("phone").value;
@@ -45,3 +48,4 @@ Service: ${service}`;
 
     window.open(whatsappURL, "_blank");
 });
+}

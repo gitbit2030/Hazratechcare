@@ -15,6 +15,7 @@ const categories = {
       },
       {
         name: "Crucial BX500 240GB 3D NAND SATA 6.35 cm",
+        image: "assets/crucial-bx500.png",
         badge: "Upgrade pick",
         price: "INR 5.360",
         use: "Budget upgrade , Faster boot time , Old laptop revival",
@@ -237,6 +238,7 @@ activeCategory.products.forEach((product) => {
   card.className = "recommended-card";
 
   card.innerHTML = `
+    <img src="${product.image}" alt="${product.name}" class="product-image">
     <span class="recommended-badge">${product.badge}</span>
     <h3>${product.name}</h3>
     <p>${product.note}</p>
