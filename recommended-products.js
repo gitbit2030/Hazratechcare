@@ -5,13 +5,14 @@ const categories = {
     description: "Fast storage picks for backups, file transfer, laptop upgrades, and safer data handling.",
     products: [
       {
-        name: "1TB Portable External SSD",
-        badge: "Best for backup",
-        price: "INR 5,499",
-        use: "Photos, documents, and quick file transfer",
-        spec: "USB-C, shock-resistant body",
-        note: "Good first backup drive for most home users.",
-        link: "#"
+        name: "Zebronics 256GB M.2",
+        image: "assets/Zebronics 256GB M.2.png",
+        badge: "Upgrade pick",
+        price: "INR 4,970",
+        use: "Windows upgrade, office work, students, video storage",
+        spec: "NVMe PCIe, 2200MB/s Read, 1600MB/s Write",
+        note: "A budget-friendly NVMe SSD that delivers excellent everyday performance. Ideal for upgrading older systems or building a portable SSD using an NVMe enclosure.",
+        link: "https://amzn.to/4uFydar"
       },
       {
         name: "Crucial BX500 240GB 3D NAND SATA 6.35 cm",
@@ -24,186 +25,187 @@ const categories = {
         link: "https://amzn.to/4fFyvcn"
       },
       {
-        name: "1TB Internal SATA SSD",
-        badge: "Upgrade pick",
-        price: "INR 4,299",
-        use: "Speeding up older desktops and laptops",
-        spec: "2.5-inch SATA",
-        note: "Useful when replacing a slow hard drive.",
-        link: "#"
-      }
-    ]
-  },
-  hub: {
-    label: "USB Hubs",
-    title: "Recommended USB-C Hubs",
-    description: "Multiport adapters for laptops that need more ports for monitors, drives, keyboards, and charging.",
-    products: [
-      {
-        name: "7-in-1 USB-C Hub",
-        badge: "Best overall",
-        price: "INR 1,499",
-        use: "Laptop desks and everyday accessories",
-        spec: "HDMI, USB-A, USB-C PD, card reader",
-        note: "Balanced hub for most slim laptops.",
-        link: "#"
-      },
-      {
-        name: "Compact 4-Port USB Hub",
-        badge: "Simple pick",
-        price: "INR 699",
-        use: "Keyboard, mouse, printer, flash drives",
-        spec: "USB-A expansion",
-        note: "Good for older laptops and desktops.",
-        link: "#"
-      },
-      {
-        name: "USB-C Hub with Ethernet",
-        badge: "Work pick",
-        price: "INR 2,199",
-        use: "Stable internet and monitor output",
-        spec: "Gigabit LAN, HDMI, PD charging",
-        note: "Helpful for work-from-home setups.",
-        link: "#"
-      }
-    ]
-  },
-  wifi: {
-    label: "Wi-Fi",
-    title: "Recommended Wi-Fi Products",
-    description: "Router and mesh picks for stronger coverage, fewer call drops, and cleaner home network setup.",
-    products: [
-      {
-        name: "Dual-Band Wi-Fi Router",
-        badge: "Best for flats",
-        price: "INR 2,499",
-        use: "Browsing, streaming, and video calls",
-        spec: "2.4 GHz and 5 GHz bands",
-        note: "Practical choice for small and medium homes.",
-        link: "#"
-      },
-      {
-        name: "2-Pack Mesh Wi-Fi Kit",
-        badge: "Coverage pick",
-        price: "INR 6,999",
-        use: "Large homes and weak-signal rooms",
-        spec: "Whole-home mesh coverage",
-        note: "Better than adding random extenders.",
-        link: "#"
-      },
-      {
-        name: "USB Wi-Fi Adapter",
-        badge: "Repair pick",
-        price: "INR 799",
-        use: "Desktop Wi-Fi or weak laptop adapter",
-        spec: "Dual-band USB adapter",
-        note: "Quick fix when built-in Wi-Fi is unreliable.",
-        link: "#"
-      }
-    ]
-  },
-  combo: {
-    label: "Keyboard Combos",
-    title: "Recommended Keyboard and Mouse Combos",
-    description: "Comfortable wireless sets for everyday home computer use, office work, study, and browsing.",
-    products: [
-      {
-        name: "Full-Size Wireless Combo",
-        badge: "Best everyday",
+        name: "Cablet M.2 NVMe/NGFF SSD Enclosure USB 3.1 Gen2",
+        image: "assets/cablet-ssd-enclosure.png",
+        badge: "Portable SSD maker",
         price: "INR 1,199",
-        use: "Typing, office work, and home browsing",
-        spec: "2.4 GHz wireless, full-size layout",
-        note: "Simple and familiar for most users.",
-        link: "#"
-      },
-      {
-        name: "Compact Keyboard Combo",
-        badge: "Small desk",
-        price: "INR 999",
-        use: "Small tables and laptop stands",
-        spec: "Compact layout, wireless mouse",
-        note: "Saves space without adding cables.",
-        link: "#"
-      },
-      {
-        name: "Silent Keyboard and Mouse",
-        badge: "Quiet pick",
-        price: "INR 1,499",
-        use: "Shared rooms and late-night work",
-        spec: "Low-noise keys and clicks",
-        note: "Good for families and shared work areas.",
-        link: "#"
+        use: "Convert NVMe SSD into portable SSD, Mobile video storage, Fast file transfer",
+        spec: "USB 3.1 Gen2 10Gbps, Supports NVMe & NGFF SSD, 2242/2260/2280, UASP, Up to 2TB",
+        note: "Aluminium enclosure that turns an internal SSD into a high-speed portable SSD for laptops, PCs, and smartphones.",
+        link: "https://amzn.to/4ea1rIm"
       }
     ]
   },
-  stand: {
-    label: "Laptop Stands",
-    title: "Recommended Laptop Stands",
-    description: "Desk setup picks that improve screen height, airflow, and comfort during longer laptop sessions.",
-    products: [
-      {
-        name: "Adjustable Laptop Stand",
-        badge: "Best comfort",
-        price: "INR 1,299",
-        use: "Work-from-home desk setup",
-        spec: "Foldable aluminum-style stand",
-        note: "Pair with keyboard and mouse for better posture.",
-        link: "#"
-      },
-      {
-        name: "Laptop Cooling Pad",
-        badge: "Cooling pick",
-        price: "INR 899",
-        use: "Warm laptops and long usage",
-        spec: "Fan-assisted cooling base",
-        note: "Useful for older or heat-prone laptops.",
-        link: "#"
-      },
-      {
-        name: "Portable Foldable Stand",
-        badge: "Travel pick",
-        price: "INR 599",
-        use: "Study tables and mobile work",
-        spec: "Lightweight foldable design",
-        note: "Easy to carry and store.",
-        link: "#"
-      }
-    ]
-  },
-  headset: {
-    label: "Headsets",
-    title: "Recommended Headsets",
-    description: "Audio picks for calls, online classes, remote support, and clearer voice during meetings.",
-    products: [
-      {
-        name: "USB Headset with Mic",
-        badge: "Best for PC",
-        price: "INR 999",
-        use: "Meetings, classes, and support calls",
-        spec: "USB plug-and-play",
-        note: "Simple setup for desktops and laptops.",
-        link: "#"
-      },
-      {
-        name: "Bluetooth Headset",
-        badge: "Multi-device",
-        price: "INR 1,799",
-        use: "Laptop and phone switching",
-        spec: "Wireless Bluetooth connection",
-        note: "Good when you move between devices.",
-        link: "#"
-      },
-      {
-        name: "Wired 3.5mm Headset",
-        badge: "Budget pick",
-        price: "INR 599",
-        use: "Basic calls and online classes",
-        spec: "3.5mm audio jack",
-        note: "Check if your laptop supports a combo jack.",
-        link: "#"
-      }
-    ]
-  }
+  // hub: {
+  //   label: "USB Hubs",
+  //   title: "Recommended USB-C Hubs",
+  //   description: "Multiport adapters for laptops that need more ports for monitors, drives, keyboards, and charging.",
+  //   products: [
+  //     {
+  //       name: "7-in-1 USB-C Hub",
+  //       badge: "Best overall",
+  //       price: "INR 1,499",
+  //       use: "Laptop desks and everyday accessories",
+  //       spec: "HDMI, USB-A, USB-C PD, card reader",
+  //       note: "Balanced hub for most slim laptops.",
+  //       link: "#"
+  //     },
+  //     {
+  //       name: "Compact 4-Port USB Hub",
+  //       badge: "Simple pick",
+  //       price: "INR 699",
+  //       use: "Keyboard, mouse, printer, flash drives",
+  //       spec: "USB-A expansion",
+  //       note: "Good for older laptops and desktops.",
+  //       link: "#"
+  //     },
+  //     {
+  //       name: "USB-C Hub with Ethernet",
+  //       badge: "Work pick",
+  //       price: "INR 2,199",
+  //       use: "Stable internet and monitor output",
+  //       spec: "Gigabit LAN, HDMI, PD charging",
+  //       note: "Helpful for work-from-home setups.",
+  //       link: "#"
+  //     }
+  //   ]
+  // },
+  // wifi: {
+  //   label: "Wi-Fi",
+  //   title: "Recommended Wi-Fi Products",
+  //   description: "Router and mesh picks for stronger coverage, fewer call drops, and cleaner home network setup.",
+  //   products: [
+  //     {
+  //       name: "Dual-Band Wi-Fi Router",
+  //       badge: "Best for flats",
+  //       price: "INR 2,499",
+  //       use: "Browsing, streaming, and video calls",
+  //       spec: "2.4 GHz and 5 GHz bands",
+  //       note: "Practical choice for small and medium homes.",
+  //       link: "#"
+  //     },
+  //     {
+  //       name: "2-Pack Mesh Wi-Fi Kit",
+  //       badge: "Coverage pick",
+  //       price: "INR 6,999",
+  //       use: "Large homes and weak-signal rooms",
+  //       spec: "Whole-home mesh coverage",
+  //       note: "Better than adding random extenders.",
+  //       link: "#"
+  //     },
+  //     {
+  //       name: "USB Wi-Fi Adapter",
+  //       badge: "Repair pick",
+  //       price: "INR 799",
+  //       use: "Desktop Wi-Fi or weak laptop adapter",
+  //       spec: "Dual-band USB adapter",
+  //       note: "Quick fix when built-in Wi-Fi is unreliable.",
+  //       link: "#"
+  //     }
+  //   ]
+  // },
+  // combo: {
+  //   label: "Keyboard Combos",
+  //   title: "Recommended Keyboard and Mouse Combos",
+  //   description: "Comfortable wireless sets for everyday home computer use, office work, study, and browsing.",
+  //   products: [
+  //     {
+  //       name: "Full-Size Wireless Combo",
+  //       badge: "Best everyday",
+  //       price: "INR 1,199",
+  //       use: "Typing, office work, and home browsing",
+  //       spec: "2.4 GHz wireless, full-size layout",
+  //       note: "Simple and familiar for most users.",
+  //       link: "#"
+  //     },
+  //     {
+  //       name: "Compact Keyboard Combo",
+  //       badge: "Small desk",
+  //       price: "INR 999",
+  //       use: "Small tables and laptop stands",
+  //       spec: "Compact layout, wireless mouse",
+  //       note: "Saves space without adding cables.",
+  //       link: "#"
+  //     },
+  //     {
+  //       name: "Silent Keyboard and Mouse",
+  //       badge: "Quiet pick",
+  //       price: "INR 1,499",
+  //       use: "Shared rooms and late-night work",
+  //       spec: "Low-noise keys and clicks",
+  //       note: "Good for families and shared work areas.",
+  //       link: "#"
+  //     }
+  //   ]
+  // },
+  // stand: {
+  //   label: "Laptop Stands",
+  //   title: "Recommended Laptop Stands",
+  //   description: "Desk setup picks that improve screen height, airflow, and comfort during longer laptop sessions.",
+  //   products: [
+  //     {
+  //       name: "Adjustable Laptop Stand",
+  //       badge: "Best comfort",
+  //       price: "INR 1,299",
+  //       use: "Work-from-home desk setup",
+  //       spec: "Foldable aluminum-style stand",
+  //       note: "Pair with keyboard and mouse for better posture.",
+  //       link: "#"
+  //     },
+  //     {
+  //       name: "Laptop Cooling Pad",
+  //       badge: "Cooling pick",
+  //       price: "INR 899",
+  //       use: "Warm laptops and long usage",
+  //       spec: "Fan-assisted cooling base",
+  //       note: "Useful for older or heat-prone laptops.",
+  //       link: "#"
+  //     },
+  //     {
+  //       name: "Portable Foldable Stand",
+  //       badge: "Travel pick",
+  //       price: "INR 599",
+  //       use: "Study tables and mobile work",
+  //       spec: "Lightweight foldable design",
+  //       note: "Easy to carry and store.",
+  //       link: "#"
+  //     }
+  //   ]
+  // },
+  // headset: {
+  //   label: "Headsets",
+  //   title: "Recommended Headsets",
+  //   description: "Audio picks for calls, online classes, remote support, and clearer voice during meetings.",
+  //   products: [
+  //     {
+  //       name: "USB Headset with Mic",
+  //       badge: "Best for PC",
+  //       price: "INR 999",
+  //       use: "Meetings, classes, and support calls",
+  //       spec: "USB plug-and-play",
+  //       note: "Simple setup for desktops and laptops.",
+  //       link: "#"
+  //     },
+  //     {
+  //       name: "Bluetooth Headset",
+  //       badge: "Multi-device",
+  //       price: "INR 1,799",
+  //       use: "Laptop and phone switching",
+  //       spec: "Wireless Bluetooth connection",
+  //       note: "Good when you move between devices.",
+  //       link: "#"
+  //     },
+  //     {
+  //       name: "Wired 3.5mm Headset",
+  //       badge: "Budget pick",
+  //       price: "INR 599",
+  //       use: "Basic calls and online classes",
+  //       spec: "3.5mm audio jack",
+  //       note: "Check if your laptop supports a combo jack.",
+  //       link: "#"
+  //     }
+  //   ]
+  // }
 };
 
 const params = new URLSearchParams(window.location.search);
@@ -243,7 +245,13 @@ activeCategory.products.forEach((product) => {
     <h3>${product.name}</h3>
     <p>${product.note}</p>
     <ul class="recommended-meta">
-      <li><span>Price</span><strong>${product.price}</strong></li>
+    <li>
+      <span>Price</span>
+      <div class="price-section">
+        <strong>${product.price}*</strong>
+        <small class="price-note">* Prices may vary at the time of purchase.</small>
+      </div>
+    </li>
       <li><span>Best for</span><strong>${product.use}</strong></li>
       <li><span>Key spec</span><strong>${product.spec}</strong></li>
     </ul>
