@@ -189,7 +189,7 @@ select {
 }
 
 .hero-media {
-  background-image: url("assets/hazratech-care-home-computer-service.png");
+  background-image: url("../assets/hazratech-care-home-computer-service.png");
   background-size: cover;
   background-position: center right;
   transform: scale(1.02);
