@@ -12,7 +12,7 @@ const categories = {
         use: "Windows upgrade, office work, students, video storage",
         spec: "NVMe PCIe, 2200MB/s Read, 1600MB/s Write",
         note: "A budget-friendly NVMe SSD that delivers excellent everyday performance. Ideal for upgrading older systems or building a portable SSD using an NVMe enclosure.",
-        link: "https://amzn.to/4uFydar"
+        link: "#"
       },
       {
         name: "Crucial BX500 240GB 3D NAND SATA 6.35 cm",
@@ -22,7 +22,7 @@ const categories = {
         use: "Budget upgrade , Faster boot time , Old laptop revival",
         spec: "240GB SATA SSD , Up to 540MB/s read speed , 2.5-inch form factor",
         note: "Affordable SSD upgrade for faster boot and smoother everyday performance.",
-        link: "https://amzn.to/4fFyvcn"
+        link: "#"
       },
       {
         name: "Cablet M.2 NVMe/NGFF SSD Enclosure USB 3.1 Gen2",
@@ -32,7 +32,7 @@ const categories = {
         use: "Convert NVMe SSD into portable SSD, Mobile video storage, Fast file transfer",
         spec: "USB 3.1 Gen2 10Gbps, Supports NVMe & NGFF SSD, 2242/2260/2280, UASP, Up to 2TB",
         note: "Aluminium enclosure that turns an internal SSD into a high-speed portable SSD for laptops, PCs, and smartphones.",
-        link: "https://amzn.to/4ea1rIm"
+        link: "#"
       }
     ]
   },
