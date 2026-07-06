@@ -1,0 +1,248 @@
+.detail-hero {
+  padding: 140px clamp(22px, 5vw, 72px) 70px;
+  color: var(--white);
+  background:
+    linear-gradient(90deg, rgba(13, 31, 39, 0.94), rgba(13, 31, 39, 0.7)),
+    linear-gradient(135deg, var(--navy), #0b575b);
+}
+
+.detail-hero h1 {
+  max-width: 980px;
+  margin: 0;
+  font-size: clamp(2.7rem, 6vw, 5.4rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.detail-hero p:last-child {
+  max-width: 760px;
+  margin: 22px 0 0;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: clamp(1rem, 1.6vw, 1.18rem);
+}
+
+.detail-shell {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 54px 22px 92px;
+}
+
+.dark-button {
+  color: var(--navy);
+  border-color: var(--line);
+  background: var(--white);
+}
+
+.recommended-badge {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 30px;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: var(--navy);
+  font-size: 0.78rem;
+  font-weight: 850;
+  background: #e7f5f0;
+}
+
+.product-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.38fr) minmax(0, 0.62fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.detail-media,
+.detail-content,
+.not-found-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 18px 46px rgba(16, 35, 43, 0.08);
+}
+
+.detail-media {
+  display: grid;
+  gap: 18px;
+  padding: 22px;
+  position: sticky;
+  top: 92px;
+}
+
+.detail-media img {
+  width: 100%;
+  min-height: 280px;
+  max-height: 360px;
+  object-fit: contain;
+  border-radius: 8px;
+  padding: 18px;
+  background: #f8fafc;
+}
+
+.detail-content,
+.not-found-card {
+  padding: clamp(24px, 4vw, 38px);
+}
+
+.detail-price-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+  color: rgba(16, 35, 43, 0.68);
+  font-weight: 850;
+}
+
+.detail-price-row strong {
+  color: var(--navy);
+  font-size: 1.5rem;
+}
+
+.detail-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.detail-section {
+  margin-top: 30px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+}
+
+.detail-section h2,
+.not-found-card h2 {
+  margin: 0 0 14px;
+  color: var(--navy);
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+}
+
+.detail-section p,
+.not-found-card p {
+  margin: 0;
+  color: rgba(16, 35, 43, 0.72);
+}
+
+.detail-spec-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+}
+
+.detail-spec-grid div {
+  min-height: 96px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #f3f8f7;
+}
+
+.detail-spec-grid dt {
+  margin: 0 0 8px;
+  color: var(--coral);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.detail-spec-grid dd {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 750;
+}
+
+.split-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.detail-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 20px;
+  color: rgba(16, 35, 43, 0.72);
+}
+
+.technician-note {
+  padding: 22px;
+  border: 1px solid rgba(11, 140, 143, 0.25);
+  border-radius: 8px;
+  background: #e7f5f0;
+}
+
+.technician-note h2 {
+  color: var(--navy);
+}
+
+.not-found-card {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.not-found-card .button {
+  margin-top: 22px;
+}
+
+@media (max-width: 900px) {
+  .product-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-media {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .detail-hero {
+    padding: 112px 18px 60px;
+  }
+
+  .detail-shell {
+    padding: 38px 18px 68px;
+  }
+
+  .detail-actions,
+  .detail-spec-grid,
+  .split-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+.floating-call {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 20px;
+    border-radius: 999px;
+
+    background: #0f172a;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+
+    box-shadow: 0 14px 40px rgba(15,23,42,0.35);
+
+    transition: all 0.3s ease;
+}
+
+.floating-call:hover {
+    transform: translateY(-4px);
+    background: #14b8a6;
+}

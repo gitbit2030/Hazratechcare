@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Configure a custom desktop PC and request a free quotation from HazraTech Care through WhatsApp.">
+  <title>Custom PC | HazraTech Care</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/custom-pc.css">
+  <link rel="icon" type="image/png" href="assets/fevicon.png">
+</head>
+<body>
+  <a href="tel:+919242281562" class="floating-call" aria-label="Call HazraTech Care">
+    Need Help Choosing? Call Now!
+  </a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html" aria-label="HazraTech Care home">
+      <img src="assets/logo.png" alt="HazraTech Care Logo">
+      <span>HazraTech Care</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Primary navigation" data-nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="custom-pc.html" aria-current="page">Custom PC</a>
+      <a href="recommendations.html">Products</a>
+      <a href="index.html#contact">Contact</a>
+      <div class="header-ganesh">
+        <img src="assets/ganesh.png" alt="Ganesh Symbol">
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="custom-pc-hero" aria-labelledby="custom-pc-title">
+      <p class="eyebrow">Custom desktop quotation</p>
+      <h1 id="custom-pc-title">Configure Your Custom PC</h1>
+      <p>Select your preferred build type, components, budget, and requirements. HazraTech Care will review your configuration and send the best quotation with availability.</p>
+    </section>
+
+    <form class="custom-pc-shell" data-custom-pc-form>
+      <section class="config-panel" aria-labelledby="configuration-title">
+        <div class="panel-heading">
+          <p class="eyebrow">Configuration</p>
+          <h2 id="configuration-title">Choose PC Components</h2>
+        </div>
+
+        <div class="field-grid">
+          <label>
+            <span>Build Type</span>
+            <select data-config-select="buildType" name="buildType"></select>
+          </label>
+
+          <label>
+            <span>Budget</span>
+            <select data-config-select="budget" name="budget"></select>
+          </label>
+
+          <label>
+            <span>Processor</span>
+            <select data-config-select="processor" name="processor"></select>
+          </label>
+
+          <label>
+            <span>Motherboard</span>
+            <select data-config-select="motherboard" name="motherboard"></select>
+          </label>
+
+          <label>
+            <span>RAM</span>
+            <select data-config-select="ram" name="ram"></select>
+          </label>
+
+          <label>
+            <span>Storage</span>
+            <select data-config-select="storage" name="storage"></select>
+          </label>
+
+          <label>
+            <span>Graphics Card</span>
+            <select data-config-select="graphicsCard" name="graphicsCard"></select>
+          </label>
+
+          <label>
+            <span>Power Supply</span>
+            <select data-config-select="powerSupply" name="powerSupply"></select>
+          </label>
+
+          <label>
+            <span>Cabinet</span>
+            <select data-config-select="cabinet" name="cabinet"></select>
+          </label>
+
+          <label>
+            <span>Operating System</span>
+            <select data-config-select="operatingSystem" name="operatingSystem"></select>
+          </label>
+        </div>
+
+        <div class="customer-section">
+          <div class="panel-heading compact-heading">
+            <p class="eyebrow">Customer information</p>
+            <h2>Request Details</h2>
+          </div>
+
+          <div class="field-grid">
+            <label>
+              <span>Customer Name</span>
+              <input type="text" name="customerName" data-customer-field="customerName" autocomplete="name" required>
+            </label>
+
+            <label>
+              <span>Mobile Number</span>
+              <input type="tel" name="mobile" data-customer-field="mobile" autocomplete="tel" required>
+            </label>
+
+            <label>
+              <span>Email Address <small>(optional)</small></span>
+              <input type="email" name="email" data-customer-field="email" autocomplete="email">
+            </label>
+          </div>
+
+          <label class="wide-field">
+            <span>Additional Requirements</span>
+            <textarea name="additionalRequirements" data-customer-field="additionalRequirements" placeholder="RGB cabinet, extra storage, silent cooling, Wi-Fi motherboard, etc."></textarea>
+          </label>
+        </div>
+      </section>
+
+      <aside class="preview-panel" aria-labelledby="preview-title">
+        <div class="preview-card">
+          <img src="assets/custom-pc-desktop.svg" alt="Desktop PC setup" class="pc-preview-image">
+          <span class="status-badge" data-preview-status>&#10004; Ready for Quotation</span>
+          <h2 id="preview-title" data-preview-build-type>Office PC</h2>
+          <p data-preview-budget>Budget: Under &#8377;30,000</p>
+          <dl class="preview-list" data-preview-components></dl>
+          <div class="preview-actions">
+            <button class="button button-secondary reset-button" type="button" data-reset-config>Reset Configuration</button>
+            <button class="button button-primary" type="submit">Get Free Estimate</button>
+          </div>
+        </div>
+      </aside>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <h3>HazraTech Care</h3>
+      <p>Reliable computer support at your home.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#top">Back to top</a>
+      <a href="index.html#services">Services</a>
+      <a href="custom-pc.html">Custom PC</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-and-conditions.html">Terms and Conditions</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+    <div class="footer-contact">
+      <p>Durgapur, West Bengal</p>
+      <p>+91 92422 81562</p>
+      <p>WhatsApp Support Available</p>
+      <p><a href="mailto:info@hazratechcare.com">info@hazratechcare.com</a></p>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright 2026 HazraTech Care. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/custom-pc.js"></script>
+</body>
+</html>

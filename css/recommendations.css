@@ -1,5 +1,5 @@
 .affiliate-hero-media {
-  background-image: url("assets/hazratech-care-affiliate-products.png");
+  background-image: url("../assets/hazratech-care-affiliate-products.png");
 }
 
 .affiliate-hero h1 {
@@ -290,4 +290,34 @@
     padding-left: 18px;
     padding-right: 18px;
   }
+}
+
+.floating-call {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 20px;
+    border-radius: 999px;
+
+    background: #0f172a;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+
+    box-shadow: 0 14px 40px rgba(15,23,42,0.35);
+
+    transition: all 0.3s ease;
+}
+
+.floating-call:hover {
+    transform: translateY(-4px);
+    background: #14b8a6;
 }

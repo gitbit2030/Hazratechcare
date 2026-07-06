@@ -189,7 +189,7 @@ select {
 }
 
 .hero-media {
-  background-image: url("assets/hazratech-care-home-computer-service.png");
+  background-image: url("../assets/hazratech-care-home-computer-service.png");
   background-size: cover;
   background-position: center right;
   transform: scale(1.02);
@@ -972,4 +972,34 @@ select {
     object-fit: contain;
     opacity: 0.9;
     border-radius: 12px
+}
+
+.floating-call {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 20px;
+    border-radius: 999px;
+
+    background: #0f172a;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+
+    box-shadow: 0 14px 40px rgba(15,23,42,0.35);
+
+    transition: all 0.3s ease;
+}
+
+.floating-call:hover {
+    transform: translateY(-4px);
+    background: #14b8a6;
 }
