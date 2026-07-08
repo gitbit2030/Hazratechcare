@@ -877,9 +877,9 @@ select {
   }
 
   .hero {
-    min-height: 88vh;
-    padding: 104px 18px 138px;
-  }
+    min-height: auto;
+    padding: 104px 18px 40px;
+}
 
   .hero-media {
     background-position: 64% center;
@@ -904,11 +904,11 @@ select {
   }
 
   .hero-status {
-    left: 18px;
-    right: 18px;
-    bottom: 18px;
+    position: static;
+    margin-top: 20px;
+    width: 100%;
     grid-template-columns: 1fr;
-  }
+}
 
   .hero-status span {
     min-height: 42px;
